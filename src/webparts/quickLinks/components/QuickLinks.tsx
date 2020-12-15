@@ -6,6 +6,7 @@ import { LinkType } from '../QuickLinksWebPart';
 import { WebPartTitle } from "@pnp/spfx-controls-react/lib/WebPartTitle";
 import Radium from 'radium';
 import * as tinycolor from 'tinycolor2';
+import folderImg from '../../../images/folder.png';
 
 @Radium
 export default class QuickLinks extends React.Component<IQuickLinksProps, {}> {
@@ -60,7 +61,8 @@ export default class QuickLinks extends React.Component<IQuickLinksProps, {}> {
                     linkProps["data-interception"] = "off";
                   }
                   return <div className={styles.linkRow} key={this.props.type + "-link-" + i}>
-                    <i style={{ color: this.props.iconColor }} className={styles.quickLinkIcon + " ms-Icon ms-Icon--" + this.getIcon()} aria-hidden="true"></i>
+                    {/* <i style={{ color: this.props.iconColor }} className={styles.quickLinkIcon + " ms-Icon ms-Icon--" + this.getIcon()} aria-hidden="true"></i> */}
+                    <img className={styles.folderImg} src={folderImg}></img>
                     <a className={styles.link} {...linkProps} style={this.inlineStyles.link}>{e.label}</a>
                   </div>;
                 })

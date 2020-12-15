@@ -1,5 +1,7 @@
 @import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
 .quickLinks {
+  margin-top: -25px;
+  
   .quickLinkIcon {
     vertical-align: middle;
     padding-right: 5px;
@@ -12,6 +14,8 @@
   }
   .link {
     text-decoration: none;
+    font-size:25px;
+    vertical-align: middle;
   }
 }
 
@@ -40,4 +44,10 @@
       padding-bottom: 5px;
     }
   }
+}
+
+.folderImg {
+  height: 50px;
+  vertical-align: middle;
+  margin-right: 10px;
 }
